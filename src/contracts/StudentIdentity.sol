@@ -52,5 +52,15 @@ contract StudentIdentity is ERC721, Ownable {
 
         return super._update(to, tokenId, auth);
     }
+
+    /**
+     * @dev Gibt die URI für die NFT-Metadaten zurück.
+     * Minimal: Einfache Data URI mit JSON-Metadaten (ohne Bild).
+     * MetaMask kann das NFT damit anzeigen.
+     */
+    function tokenURI(uint256 tokenId) public view override returns (string memory) {
+        _requireOwned(tokenId);
+        return "data:application/json,{\"name\":\"HSLU Verified Student Badge\",\"description\":\"Official verification badge for HSLU students. This Soul-Bound Token (SBT) proves your verified student status.\"}";
+    }
 }
  
