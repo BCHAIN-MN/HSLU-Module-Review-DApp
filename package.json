@@ -1,0 +1,23 @@
+{
+  "name": "hslu-module-review-dapp",
+  "version": "1.0.0",
+  "description": "This project develops a decentralized platform (DApp) for students of Hochschule Luzern (HSLU), to transparently, tamper-proof, and community-driven record module ratings/reviews. \r Blockchain technology ensures tamper-proof on-chain storage of reviews, while a community-based reputation system supports review quality.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "migrate:reset": "truffle migrate --reset",
+    "test": "truffle test",
+    "seed": "truffle exec scripts/seed-test-data.js",
+    "get-accounts": "truffle exec scripts/get-accounts.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0"
+  },
+  "devDependencies": {
+    "truffle": "^5.11.5"
+  }
+}
