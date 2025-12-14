@@ -1,70 +1,15 @@
-# ------------------------------------------------------------------------------
-# Solidity / Truffle project .gitignore
-# ------------------------------------------------------------------------------
+# Remix compiler artifacts
+**/artifacts/
+**/artifacts/**
 
-# Node dependencies
-node_modules/
-npm-debug.log
-yarn-debug.log
-yarn-error.log
+# Remix plugin state folders
+deps/
+states/
 
-# Truffle build artifacts
-build/
-artifacts/
-cache/
+# Debug info
+*.dbg.json
+*.tsbuildinfo
 
-# Environment files (secrets, private keys, RPC URLs)
+# Optional
 .env
-.env.*
-*.env
-
-# Coverage reports
-coverage/
-coverage.json
-
-# Compiled contract JSONs (optional — if you don’t want them versioned)
-# uncomment if build artifacts should never be committed
-# build/contracts/
-
-# IDE / Editor specific files
-.idea/
-.vscode/
-*.swp
-*.swo
-*.iml
-
-# OS / system files
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
-# Ganache / local blockchain data
-# Ganache GUI (old versions)
-chaindata/
-# Ganache CLI (default)
-db/
-ganache-db/
-
-
-# Temporary test results or output
-.truffle/
-.truffle-solidity-loader/
-
-# Hardhat (if combined environment)
-.cache/
-artifacts/
-
-# Typechain (if used)
-typechain/
-typechain-types/
-
-# Optional: Ignore compiled ABIs & bytecode if you use TypeScript bindings
-src/abis/
-
-
-
-# ------------------------------------------------------------------------------
-# End of file
-# ------------------------------------------------------------------------------
+.env.local
