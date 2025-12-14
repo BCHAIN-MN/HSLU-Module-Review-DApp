@@ -29,7 +29,7 @@ contract ModuleReviews {
     mapping(string => Review[]) private moduleReviews;
 
     event ModuleAdded(string id);
-    event ReviewAdded(string moduleId, address reviewer, uint8 rating);
+    event ReviewAdded(string indexed moduleId, address indexed reviewer, uint8 rating);
 
     constructor(address _identityContractAddress) {
         identityContract = IStudentIdentity(_identityContractAddress);
